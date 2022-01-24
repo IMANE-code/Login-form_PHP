@@ -1,3 +1,15 @@
+<?php
+if (
+    (!isset($_GET['email']) || !filter_var($_GET['email'], FILTER_VALIDATE_EMAIL))
+    || (!isset($_GET['username']) && !empty($_GET['username']))
+    || (!isset($_GET['subject']) && !empty($_GET['subject']))
+    || (!isset($_GET['message']) && !empty($_GET['message']))
+    )
+{
+	echo('Il faut un email et un message valides pour soumettre le formulaire.');
+    return;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Document</title>
+    <title>INFORATIONS CONTACT VALIDATIONS</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
