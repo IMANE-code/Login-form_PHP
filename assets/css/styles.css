@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/* resetting css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* stting standard styles for elements */
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url(../media/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+main{
+    position:relative;
+}
+
+form{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform:translate(-50%,20%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 9px 17px rgb(68 68 68);
+}
+.div-btn-sign{
+    background-color: #f9f5f3;
+    padding:30px 20px;
+}
+.h1-input{
+    padding:20px;
+}
+.input-group{
+    margin:20px 10px;
+}
+.input-group-text{
+    background-color: #f9f5f3;
+    text-align: center;
+}
+.input-group-text,.email,.username,.subject{
+    height: 50px;
+    border:1px solid #ccc;
+    width: 50px;
+}
+.email::placeholder,.username::placeholder,.subject::placeholder,.message::placeholder{
+    color:#c0bdbc;
+    font-weight:normal;
+}
+.btn-sign-in{
+    width: 400px;
+    height: 60px;
+    font-size:1.8rem;
+    color: white;
+    background-image: linear-gradient(360deg,#e6613c,#e6613c,#e6613c,#e6613c,#e08f78);
+    border: 1.5px solid #c3573a;
+    border-radius: 8px;
+    box-shadow: 1px  1px 2px rgb(140, 140, 140);
+}
+.div-btn-facebook{
+    background-color: #5f90b0;
+    padding:20px;
+    border-radius: 0px 0px 8px  8px ;
+}
+.btn-login-facebook{
+    color: white;
+    background-color:transparent;
+    outline:0;
+    border: none;
+}
+.erreur{
+    background-color:#cd878c;
+    border: 1px solid #9c6d70;
+    color:white;
+    border-radius: 4px;
+    height: 40px;
+    padding: 6px 10px 6px 10px;
+    display:none;
+}
+.copyright{
+    font-size:0.7rem;
+    color: #897a74;
+}
+h1 {
+    font-size:1.3rem;
+    font-weight: bolder;
+    font-style: normal;
+    color: #897a74;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+h2 {
+    font-size: 1.75rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+h3 {
+    font-size:1.3rem;
+    font-weight: bolder;
+    font-style: normal;
+    color: #897a74;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+h4 {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+p {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+ul {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+a {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: x/*replace x with a value*/;
+    line-height: x/*replace x with a value*/;
+}
+a:hover,
+button:hover {
+   cursor: pointer;
+}
+a:focus,
+button:focus,
+input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+input:focus::placeholder {
+ color: transparent;
+}
+textarea:focus::placeholder {
+ color: transparent;
+}
